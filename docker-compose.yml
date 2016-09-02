@@ -11,3 +11,4 @@ spring-boot-test-app:
     - db
   env_file:
     - dev.env
+    - compose.env

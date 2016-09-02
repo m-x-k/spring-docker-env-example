@@ -1,0 +1,11 @@
+db:
+  image: mongo
+  ports:
+    - 27017:27017
+
+spring-boot-test-app:
+  build: .
+  links: 
+    - db
+  env_file:
+    - dev.env
